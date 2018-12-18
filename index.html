@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>SAKB'S Task</title>
+</head>
+
+<body class="theme-1">
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-white mt-3 text-right">
+            <!--  -->
+            <div class="btn-group">
+              <button type="button" class="btn theme-1Btn p-3"></button>
+              <button type="button" class="btn theme-2Btn p-3"></button>
+              <button type="button" class="btn theme-3Btn p-3"></button>
+              <button type="button" class="btn btn-secondary" disabled><i class="fas fa-cog fa-2x theme-icon"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Main-->
+  <main id="main-page">
+    <section>
+      <div class="container">
+        <div class="row mt-2">
+          <div class="col-12 text-center text-white">
+            <h1 class="display-4">KIDS CALCULATOR</h1>
+            <p class="lead">-MADE FOR SAKB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row my-2">
+          <div class="col-12">
+            <h2 class="text-white">Drag & Drop numbers to the boxs</h2>
+          </div>
+        </div>
+        <div class="row my-2">
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">1</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">2</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">3</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">4</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">5</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">6</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">7</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">8</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center">9</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="card my-1 dragCard">
+              <div class="card-body">
+                <h3 class="card-text text-center val10">10</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 col-lg-2">
+            <p class="text-white">First Box</p>
+            <div class="card input-card1">
+              <div class="card-body">
+                <input type="text" readonly value="" class="myinput1">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 col-lg-2 text-center custBtns">
+            <div class="btn-group btn-group-lg">
+              <button type="button" class="btn btn-warning addBtn">+</button>
+              <button type="button" class="btn btn-secondary subBtn">-</button>
+            </div>
+          </div>
+
+          <div class="col-4 col-lg-2">
+            <p class="text-white">Second Box</p>
+            <div class="card input-card2">
+              <div class="card-body">
+                <input type="text" readonly value="" class="myinput2">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-1">
+            <div class="custBtns">
+              <button class="btn btn-success btn-lg btn-block eqBtn">=</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5">
+            <p class="text-white text-center">Result</p>
+            <div class="card input-card3">
+              <div class="card-body">
+                <div class="input-group">
+                  <input type="text" readonly class="form-control result">
+                  <div class="input-group-append">
+                    <span class="input-group-text resetBtn">
+                      <i class="fas fa-redo fa-2x"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+  </main>
+  <!--/Main-->
+
+
+  <!-- Footer -->
+  <footer class="mt-5 py-4 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center text-white lead">Copyright © <span id="year"></span> Mahmoud Hossam</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!--Scripts-->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="scripts/jquery-ui.min.js"></script>
+
+  <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="scripts/script.js"></script>
+
+  <script>
+    const year = document.getElementById("year");
+
+    year.textContent = new Date().getFullYear();
+  </script>
+
+
+
+</body>
+
+</html>
